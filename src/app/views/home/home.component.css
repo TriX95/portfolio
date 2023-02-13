@@ -1,0 +1,39 @@
+.home-container{
+    margin: 7rem 3rem 0 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-content-title h1
+{
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.home-content p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.home-content-title h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.contentImg{
+    width: 50%;
+}
+
+.home-content{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home-nowrap{
+    white-space: nowrap;
+    color: var(--colorFour);
+    font-weight: bold;
+    font-size: 4rem;
+}
+

@@ -1,0 +1,143 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.contact-img{
+    width: 150px;
+    height: auto;
+    border: solid 5px var(--colorFour);
+    border-radius: 50%;
+}
+
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.contact-header p{
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 1rem;
+}
+
+.contact-name,
+.contact-email{
+    width: 45%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-input{
+    height: 2rem;
+    font-size: 1rem;
+    padding: 1rem ;
+}
+
+.contact-input{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 2px rgba(170, 170, 170, 0.2);
+}
+input::placeholder{
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+.contact-input:focus{
+    outline: none;
+}
+.contact-input:not(:placeholder-shown){
+   border-color: rgb(221, 80, 80);
+   color: rgb(221, 80, 80);
+   font-weight: bold;
+}
+.contact-input:not(:placeholder-shown)+span::after{
+    content: "Meno musí obsahovať aspoň 3 znaky";
+}
+.contact-input:not(:placeholder-shown):valid{
+    border-color: rgb(142, 222, 142);
+    color: rgb(142, 222, 142);
+    font-weight: bold;
+}
+.contact-input:not(:placeholder-shown):valid+span::after{
+    content: "";
+}
+.contact-input:invalid + span::after{
+    border-color: rgb(221, 80, 80);
+    color: rgb(221, 80, 80);
+    font-weight: bold;
+} 
+.contact-imput-mail:not(:placeholder-shown)+span::after{
+    content: "Zadajte správny tvar emailu";}
+
+
+label{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--colorFour);
+}
+.contact-textarea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-textarea textarea
+{
+    height: 10rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: solid 2px rgba(170, 170, 170, 0.2);
+    font-size: 1.5rem;
+}
+textarea::placeholder{
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.btn{
+    border: solid 2px var(--colorFour);
+    border-radius: 35px;
+    width: 8rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    color: var(--colorFour);
+    background: transparent;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: var(--colorOne);
+    background: var(--colorFour);
+}
+
+.contact-progressBar{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    top: -4rem;
+}

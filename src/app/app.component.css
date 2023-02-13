@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    --colorOne : #F7F7F7;
+    --colorTwo : #EFF5F5;
+    --colorThree : #222831;
+    --colorFour : #00ADB5;
+  }
+  
+  
+  body{
+    /*background:
+    linear-gradient(
+      132deg, 
+      var(--colorOne), var(--colorTwo)
+    );*/
+    min-height: 100vh;
+    color: var(--colorThree);
+  }
+
+  

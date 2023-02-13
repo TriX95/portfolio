@@ -1,0 +1,12 @@
+<div class="skillbar-container" *ngFor="let skill of skills">
+          
+    <h3  class="skillbar-name"><span><fa-icon [icon]="skill.icon"></fa-icon></span>{{skill.name}}</h3>
+        <div class="skillbox">
+          <svg  class='skillbar-progress' 
+                attr.width = "{{skill.progress}}%">
+          </svg>
+        </div>
+        <span class='skillbar-text'>{{skill.progress}}</span>
+        <hr class='skillbar-hr'/>
+    </div>
+    

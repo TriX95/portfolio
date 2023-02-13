@@ -1,0 +1,28 @@
+<div class="contact-container"> <div class="contact-header">
+    <img class="contact-img" src="./assets/img/Profil-img.jpg" alt="" />
+     <p>Ak mi cheš niečo napísať, teraz máš šancu.</p> 
+    </div>
+    <form  class="contact-form" (submit)="sendEmail($event)">
+      <div class="contact-name" >
+        <label> Meno </label>
+          
+          <input type="text" class="contact-input" name="name" placeholder="Meno" formControlName="name" required  minlength="3" maxLength = "25" oninvalid="asd" autoFocus/>
+          <span ></span>
+       
+      </div>
+      <div class="contact-email">
+        <label> Email </label>
+          <input type="email" class="contact-input contact-imput-mail" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@+[a-z0-9.-]+\.[a-z]{2,}$" />
+          <span></span>
+        
+      </div>
+      <div class="contact-textarea">
+        <label> Správa </label>
+          <textarea placeholder="Vaša správa" name="message" class="contact-textarea" required></textarea>
+          <p></p>
+      </div>  
+      <div class="contact-btn">
+        <input type="submit" value="Odoslať" class="btn"/>
+      </div>
+    </form>
+</div>
