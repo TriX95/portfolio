@@ -4,13 +4,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .profil-img{
-    width: 150px;
+    width: 200px;
     height: auto;
-    border-radius: 50%;
-    border: solid 5px var(--colorFour);
 }
 
 .profil-about{

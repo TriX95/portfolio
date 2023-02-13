@@ -8,8 +8,6 @@ import { Component} from '@angular/core';
 export class ProgressBarComponent {
   constructor( ){
   }
-   fdsa: number;
-   desc = 2
   progress = 50;
   strokeArray = 31.5
   strokeOffset = 0
